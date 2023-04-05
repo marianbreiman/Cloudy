@@ -3,12 +3,12 @@ import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
 export const Navbar = () => {
   return (
-    <navbar className="navbarContainer">
+    <nav className="navbarContainer">
       <div className="navbar">
         <a href="/">
           <img
-            src="https://res.cloudinary.com/dxg84fpj7/image/upload/v1680655490/samples/cloudinary-logo-vector.svg"
-            className="full navbarLogo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Logo_de_Tiendanube.svg/1620px-Logo_de_Tiendanube.svg.png"
+            className="navbarLogo"
             alt="logo"
           />
 
@@ -16,22 +16,22 @@ export const Navbar = () => {
         <ul className="navLinksContainer">
           <li>
             <a href="/" className="navLinks">
-              Categories
+              Categorias
             </a>
           </li>
           <li>
             <a href="/" className="navLinks">
-              Products
+              Productos
             </a>
           </li>
           <li>
             <a href="/" className="navLinks">
-              FAQS
+             Descuentos
             </a>
           </li>
           <li>
             <a href="/" className="navLinks">
-              Contact
+              Contacto
             </a>
           </li>
         </ul>
@@ -41,6 +41,6 @@ export const Navbar = () => {
           <HiOutlineBars3BottomRight className="navbarToggler faIcons" />
         </div>
       </div>
-    </navbar>
+    </nav>
   );
 };

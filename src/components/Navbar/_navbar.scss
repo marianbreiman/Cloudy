@@ -1,6 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+
 .navbarContainer {
   display: flex;
   justify-content: center;
+  overflow-y: auto;
 }
 
 .navbar {
@@ -9,8 +20,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 5rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  min-height: 5rem;
+  background-color: rgba(119, 0, 255, 0.8);
   color: white;
   padding: 0rem 2rem 0rem 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -23,22 +34,28 @@
 .navLinksContainer {
   display: flex;
   flex-direction: row;
+  max-height: 5rem;
+  overflow-y: auto;
 }
 
 .navLinks {
-  background: -webkit-linear-gradient(90deg, #00bbff 10%, #1e00c7 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: whitesmoke;
   text-decoration: none;
-  margin-left: 2rem;
-  &:hover {
-    text-decoration: underline;
-  }
+  margin: 1.5rem;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.navLinks:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+  color: rgba(119, 0, 255, 0.8);
+  border-radius: 1rem;
+  padding: 10px;
 }
 
 .navbarLogo {
-  height: 2rem;
+  height: 3rem;
 }
 
 .navbarToggler {
@@ -60,10 +77,52 @@
 }
 
 .cartCounter {
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 6px;
 }
 
 .mini {
   display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navLinksContainer {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background-color: rgba(119, 0, 255, 0.8);
+    padding: 1rem;
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .navLinksContainer.active {
+    display: flex;
+  }
+
+  .navLinks {
+    display: block;
+    text-align: center;
+    margin: 1rem 0rem;
+    border-radius: 1rem;
+    padding: 10px;
+  }
+
+  .navbarToggler {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .mini {
+    display: block;
+    position: absolute;
+    top: 0.75rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 }
