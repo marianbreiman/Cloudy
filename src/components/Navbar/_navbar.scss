@@ -1,0 +1,69 @@
+.navbarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0rem 2rem 0rem 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  z-index: 1;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: blur(5px);
+}
+
+.navLinksContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.navLinks {
+  background: -webkit-linear-gradient(90deg, #00bbff 10%, #1e00c7 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  margin-left: 2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbarLogo {
+  height: 2rem;
+}
+
+.navbarToggler {
+  display: none;
+}
+
+.navbarOptionsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.cartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartCounter {
+  font-size: 15px;
+  padding-top: 6px;
+}
+
+.mini {
+  display: none;
+}
