@@ -15,6 +15,20 @@ function App() {
   );
 }
 
+let bienvenida = "Bienvenido a la pagina";
+let nombreDeMarca = "Cloudy commerce";
+
+function Bienvenido() {
+  return (
+    <div className="App">
+      <Navbar />
+      <ItemListContainer
+        bienvenida={bienvenida}
+        nombreDeMarca={nombreDeMarca}
+      />
+    </div>
+  );
+}
 
 export default App;
 
