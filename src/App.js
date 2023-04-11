@@ -10,7 +10,7 @@ function App() {
       <ItemListContainer 
       bienvenida={bienvenida}
       nombreDeMarca={nombreDeMarca}
-      < />
+       />
     </div>
   );
 }
